@@ -21,3 +21,15 @@ header {
   font-style: normal;
   font-size: 2em;
 }
+
+/* #content {
+  display: block;
+} */
+
+/* .show_content {
+  display: block;
+} */
+
+.hide_content {
+  display: none;
+}
