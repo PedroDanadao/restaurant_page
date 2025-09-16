@@ -15,6 +15,11 @@ header {
     justify-content: center;
 }
 
+.logo_container {
+  display: flex;
+  align-items: end;
+  grid-column: 1 / -1;
+}
 .logo_name {
   font-family: "Story Script", sans-serif;
   font-weight: 400;
@@ -22,14 +27,55 @@ header {
   font-size: 2em;
 }
 
-/* #content {
-  display: block;
-} */
+h1, h2 {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+}
 
-/* .show_content {
-  display: block;
-} */
+#content {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: 65px 9fr;
+}
+
+.show_content,
+.hide_content {
+  /* background-color: aqua; */
+  grid-column: 2;
+  grid-row: 2;
+}
 
 .hide_content {
   display: none;
+}
+
+.menu_grid_container {
+  display: grid;
+  gap: 5px;
+
+  grid-template-columns: 1fr 1fr;
+}
+.menu_item_container {
+  background-color: rgb(228, 143, 82);
+  border-radius: 10px;
+  border: black dashed;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.item_price {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+}
+.image_and_price_container {
+  justify-self: end;
+  display: flex;
+  align-items: end;
+}
+.item_description {
+  max-width: 50ch;
 }

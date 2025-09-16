@@ -11,12 +11,14 @@ function create_element(type, class_name,  text_content='', parent_element) {
 
 import { HomeContents } from "./home_content";
 import { MenuContents } from "./menu_contents";
+import { AboutContents } from "./about_contents";
 
 function toggle_pages(page_to_show) {
     console.log("entered again");
 
     HomeContents.hide_content();
     MenuContents.hide_content();
+    AboutContents.hide_content();
 
     page_to_show.className = "show_content";
 }
