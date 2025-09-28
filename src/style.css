@@ -65,6 +65,14 @@ h1, h2 {
   flex-direction: column;
   padding: 10px;
 }
+.item_description {
+  background-color: white;
+  padding: 2px;
+  border-radius: 5px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+}
 .item_price {
   font-family: "Story Script", sans-serif;
   font-weight: 400;
@@ -78,4 +86,10 @@ h1, h2 {
 }
 .item_description {
   max-width: 50ch;
+}
+
+.headline_closing_phrase,
+.client_name,
+.hours_list {
+  margin-bottom: 50px;
 }
